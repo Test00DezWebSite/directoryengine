@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Places</title>
+  <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/places.css" rel="stylesheet">
+    <!--Font Awesome Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Google Font: Open Sans -->
+   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"></nav>
+  </header>
+  <div class="map-container"></div>
+
+    <!--Main contents -->
+   <section class="content">
+   <div class="section-left">
+     <div class="hotel-1-box">
+       <div class="sidebar pull-left">
+         <button type="button" class="btn btn-primary"><i class="fa fa-star"></i></button>
+         <button type="button" class="btn btn-primary"><i class="fa fa-external-link"></i></button>
+         <button type="button" class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+         <button type="button" class="btn btn-primary"><i class="fa fa-flag"></i></button>
+         <button type="button" class="btn btn-primary"><i class="fa fa-envelope"></i></button>
+       </div>
+       <div class="hotel-1 pull-right">
+         <div class="menu">
+           <div class="menu-text pull-left">
+             <p>Home  >>  Hotel   >>  Awesome Hotel</p>
+           </div>
+           <div class="owner pull-right">
+           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">For Owner
+           <span class="caret"></span></button>
+         </div>
+         </div>
+         <div class="hotel-content">
+           <div class="hotel-left pull-left">
+             <div class="thumbnail-lg"></div>
+             <ul class="list-group table-striped">
+               <li class="list-group-item"><i class="fa fa-map-marker"></i> 100 m. Tran Huy Lieu Str.</li>
+               <li class="list-group-item"><i class="fa fa-phone"></i> 1-382-87492</li>
+               <li class="list-group-item"><i class="fa fa-envelope"></i> contact@amazing.com</li>
+               <li class="list-group-item"><i class="fa fa-globe"></i> www.amazinghotel.com</li>
+               <li class="list-group-item"><i class="fa fa-clock-o"></i> 8 am to 10 pm. Every day</li>
+             </ul>
+             <div class="contact-owner">
+               <button type="button" class="btn btn-block">Contact Owner</button>
+             </div>
+           </div>
+           <div class="hotel-right">
+             <div class="hotel-heading">
+             <div class="pull-left">
+               <h1>Amazing Hotel</h1>
+             </div>
+             <div class="pull-right">
+               <p><i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               (2 reviews) <p>
+             </div>
+           </div>
+           <div class="med-thumbnails">
+             <div class="thumbnail-med"></div>
+             <div class="thumbnail-med"></div>
+             <div class="thumbnail-med"></div>
+             <div class="thumbnail-med"></div>
+             <div class="thumbnail-med see-more"></div>
+           </div>
+            <div class="hotel-description">
+             <p>Description:</p>
+
+             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
+             <p>Dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.</p>
+
+             <p>Number list:</p>
+                   <ol>
+                     <li>At vero eos et accusamus et iusto odio dignissimos.</li>
+                     <li>Sed ut perspiciatis unde omnis iste natus error.</li>
+                     <li>Nemo enim ipsam voluptatem quia.</li>
+                   </ol>
+
+             <p>Bullet list: </p>
+             <ul>
+               <li>At vero eos et accusamus et iusto odio dignissimos.</li>
+               <li>Sed ut perspiciatis unde omnis iste natus error.</li>
+             </ul>
+           </div>
+         </div>
+           
+           </div>
+         </div>
+         
+       </div>
+     
+    <div class="load-more"><button type="button" class="btn btn-primary btn-block">Load more places</button></div>
+    </div>
+
+    <!--Add Right stuff -->
+
+    <div class="section-right">
+      <div class="section-header"></div>
+      <div class="map-thumbnail"></div>
+      <div class="directions">
+      <button type="button" class="btn btn-primary btn-block">View Directions</button></div>
+      <div class="section-header">
+             <h1>Nearby Deals</h1>
+
+           </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h2>Cocochina Leonardo</h2>
+              <p><i class="fa fa-map-marker"></i> 100 m. Tran Huy Lieu Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h2>Yeeboo Restaurant</h2>
+              <p><i class="fa fa-map-marker"></i> 250 m. Nguyen Van Troi Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h2>Amazing Hotel</h2>
+              <p><i class="fa fa-map-marker"></i> 1 km. Nguyen Hue Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h2>Fashion Collection</h2>
+              <p><i class="fa fa-map-marker"></i> 1.5 km. Nguyen Hue Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+    </div>
+
+    </div>
+
+    <div class="hotel-2-box">
+      <div class="sidebar pull-left"></div>
+      <div class="hotel-2 pull-right"></div>
+    </div>
+
+    <div class="hotel-3-box">
+      <div class="sidebar pull-left"></div>
+      <div class="hotel-3 pull-right"></div>
+    </div>
+
+    
+
+     
+   </section>
+
+
+
+
+
+
+
+  <!--About/Contact us -->
+    <section class="about">
+    <div class="section-left">
+    <!--About Directory Engine -->
+      <div class="about-box">
+        <div class="section-header">
+          <h2>About Directory Engine</h2>
+        </div>
+        <div class="about-text">
+          <p>Put a bird on it cliche Terry Richardson, mlkshk hashtag pickled paleo raw denim locavore messenger bag cray you probably haven't heard of them. Intelligentsia beard stumptown, dreamcatcher Pitchfork Odd Future roof party chambray deep v gastropub.</p>
+        </div>
+        
+      </div>
+
+      <!-- Links -->
+      <div class="about-box" id="links">
+        <div class="section-header">
+          <h2>Links</h2>
+        </div>
+        <div class="about-text">
+          <ul>
+          <li>Categories</li>
+          <li>Theme Features</li>
+          <li>Sample Page</li>
+          <li>Blog</li>
+        </ul>
+        </div>
+        
+      </div>
+
+      <!-- Contact Us -->
+      <div class="about-box">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+        </div>
+
+        <ul>
+          <li>1-888-8327</li>
+          <li>contact@enginethemes.com</li>
+        </ul>
+         <!-- Stay in Touch -->
+
+        <div class="section-header">
+          <h2>Stay in Touch</h2>
+        </div>
+        <ul>
+          <li><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>Facebook</li>
+          <li><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>Twitter</li>
+          <li><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+            </span>Google+</li>
+          <li><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+            </span>Pinterest</li>
+          <li><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-right">
+      <div class="about-box">
+        <div class="section-header">
+          <h2>Features</h2>
+        </div>
+        <div class="about-features">
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h3>Cocochina Leonardo</h3>
+              <p><i class="fa fa-map-marker"></i>100 m. Tran Huy Lieu Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail">
+              
+            </div>
+            <div class="small-description">
+              <h3>Yeeboo Restaurant</h3>
+              <p><i class="fa fa-map-marker"></i>250 m. Nguyen Van Troi Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+          <div class="card-small">
+            <div class="small-thumbnail thumbnail"></div>
+            <div class="small-description">
+              <h3>Amazing Hotel</h3>
+              <p><i class="fa fa-map-marker"></i>1 km. Nguyen Hue Str.</p>
+              <p><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    </section>
+    <footer class="footer">
+      
+        <h2 class="pull-left">DIRECTORYENGINE</h2>
+      
+    
+        <p class="pull-right">© 2014 Directory.  Designed by EngineThemes.</p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
